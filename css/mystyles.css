@@ -1,0 +1,34 @@
+.button-hover {
+  cursor: pointer;
+  transition: background-color .3s;
+}
+.button-hover span{
+  transition: color .3s;
+}
+
+.button-hover:hover {
+  background-color: grey;
+}
+
+.button-hover:hover span{
+  color: #ffffff;
+}
+
+.navigation {
+  position: relative;
+}
+
+.navigation .modal {
+  transform: translateX(-100%);
+  transition: transform .3s;
+  position: fixed;
+  left: 0;
+  width: 70vw;
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 3, 1fr;
+}
+
+.navigation .modal.modal--active {
+  transform: translateX(1);
+}
