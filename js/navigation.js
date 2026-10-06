@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const li = e.target.closest('li[data-modal]')
     if (!li) return
 
-
     const templateId = li.dataset.modal
     const template = document.getElementById(templateId)
 
