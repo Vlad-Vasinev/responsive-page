@@ -1,12 +1,6 @@
-function onDocLoad(clb) {
-  if (document.readyState != 'complete') {
-    document.addEventListener('DOMContentLoaded', clb);
-  } else {
-    clb()
-  }
-}
 
-onDocLoad(() => {
+
+document.addEventListener('DOMContentLoaded', () => {
   const newBurger = document.querySelector('.burger')
 
   const navigation = document.querySelector('.navigation')

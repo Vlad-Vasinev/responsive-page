@@ -1,0 +1,15 @@
+.button-hover {
+  cursor: pointer;
+  transition: background-color .3s;
+}
+.button-hover span{
+  transition: color .3s;
+}
+
+.button-hover:hover {
+  background-color: grey;
+}
+
+.button-hover:hover span{
+  color: #ffffff;
+}

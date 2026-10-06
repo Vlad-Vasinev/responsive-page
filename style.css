@@ -11,9 +11,9 @@
     --color-emerald-800: oklch(43.2% 0.095 166.913);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
-    --color-black: #000;
     --spacing: 0.25rem;
     --font-weight-medium: 500;
+    --font-weight-bold: 700;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -169,6 +169,15 @@
   }
 }
 @layer utilities {
+  .fmb-\[6\] {
+    margin-bottom: clamp(4.00px, 0.3125vw, 6px);
+  }
+  .fmb-\[10\] {
+    margin-bottom: clamp(6.67px, 0.5208vw, 10px);
+  }
+  .fmb-\[20\] {
+    margin-bottom: clamp(13.33px, 1.0417vw, 20px);
+  }
   .block {
     display: block;
   }
@@ -190,23 +199,14 @@
   .fw-\[34\] {
     width: clamp(22.67px, 1.7708vw, 34px);
   }
+  .fw-\[40\] {
+    width: clamp(26.67px, 2.0833vw, 40px);
+  }
   .fw-\[140\] {
     width: clamp(93.33px, 7.2917vw, 140px);
   }
-  .fw-\[300\] {
-    width: clamp(200.00px, 15.6250vw, 300px);
-  }
   .fw-\[350\] {
     width: clamp(233.33px, 18.2292vw, 350px);
-  }
-  .fw-\[450\] {
-    width: clamp(300.00px, 23.4375vw, 450px);
-  }
-  .fw-\[550\] {
-    width: clamp(366.67px, 28.6458vw, 550px);
-  }
-  .fw-\[650\] {
-    width: clamp(433.33px, 33.8542vw, 650px);
   }
   .w-1 {
     width: var(--spacing);
@@ -231,9 +231,6 @@
   }
   .resize {
     resize: both;
-  }
-  .flex-col {
-    flex-direction: column;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -268,14 +265,11 @@
   .fpr-\[6\] {
     padding-right: clamp(4.00px, 0.3125vw, 6px);
   }
+  .fpr-\[10\] {
+    padding-right: clamp(6.67px, 0.5208vw, 10px);
+  }
   .fpr-\[34\] {
     padding-right: clamp(22.67px, 1.7708vw, 34px);
-  }
-  .fpr-\[40\] {
-    padding-right: clamp(26.67px, 2.0833vw, 40px);
-  }
-  .fpr-\[340\] {
-    padding-right: clamp(226.67px, 17.7083vw, 340px);
   }
   .fpl-\[20\] {
     padding-left: clamp(13.33px, 1.0417vw, 20px);
@@ -285,6 +279,16 @@
   }
   .ffs-\[24\] {
     font-size: clamp(16.00px, 1.2500vw, 24px);
+  }
+  .ffs-\[30\] {
+    font-size: clamp(20.00px, 1.5625vw, 30px);
+  }
+  .ffs-\[40\] {
+    font-size: clamp(26.67px, 2.0833vw, 40px);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);

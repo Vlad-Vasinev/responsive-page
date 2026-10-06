@@ -1,4 +1,39 @@
 
+.navigation {
+  position: relative;
+  overflow: hidden;
+}
+
+.navigation #modal-popup {
+  display: none;
+}
+
+.navigation #modal-popup .popup{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navigation #modal-popup .popup__body ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: unset;
+}   
+.navigation ul li.li--active{
+  background-color: grey !important;
+}
+
+.navigation #modal-popup .popup__close{
+  cursor: pointer;
+}
+.navigation #modal-popup .popup__close svg{
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.navigation #modal-popup.modal--active {
+  display: grid;
+}
+
 @media(max-width: 768px) {
 
   .navigation {
@@ -6,6 +41,7 @@
     opacity: 0;
     z-index: -1;
     transition: opacity .3s, transform .3s;
+    flex-direction: column;
   }
 
   .navigation.navigation--active { 
@@ -22,6 +58,10 @@
 
   .navigation ul li{
     padding: 12px;
+  }
+
+  .navigation .popup__body ul li {
+    padding: 0;
   }
 
   .navigation ul li:last-child{
