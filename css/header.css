@@ -1,0 +1,26 @@
+
+
+@media(max-width: 768px) {
+  
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header__wrapper {
+    width: 100%;
+    border-bottom: 1px solid #6b7280;
+  }
+
+  .header__wrapper .burger {
+    padding-right: 40px;
+    margin-top: 14px;
+  }
+  .header__wrapper .header__left {
+    padding: 12px;
+    border: none;
+  }
+
+  .header__right-status, .header__right-title {
+    padding: 12px;
+  }
+}
