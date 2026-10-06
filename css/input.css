@@ -1,3 +1,3 @@
 @import "tailwindcss";
-@plugin "./mixin.js";
+@plugin "../js/mixin.js";
 @plugin "@theunwindfront/tailwindcss-fluid-scale";

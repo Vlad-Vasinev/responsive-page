@@ -1,7 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = plugin(({ matchUtilities }) => {
-  // from two-thirds size at 1280px to full size at 1920px
   const f = (v) =>
     `clamp(${(v * 2 / 3).toFixed(2)}px, ${(v / 1920 * 100).toFixed(4)}vw, ${v}px)`
 

@@ -5,7 +5,11 @@
 }
 
 .navigation #modal-popup {
-  display: none;
+  display: grid;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
 }
 
 .navigation #modal-popup .popup{
@@ -27,6 +31,14 @@
 .navigation #modal-popup .popup__close{
   cursor: pointer;
 }
+
+.navigation #modal-popup .popup__close-svg svg{
+  transition: transform .3s;
+}
+.navigation #modal-popup .popup__close-svg:hover svg{
+  transform: rotate(45deg) scale(1.2);
+} 
+
 .navigation #modal-popup .popup__body .popup__body-item h2{
   border-bottom: 2px solid rgb(32, 175, 32);
   width: max-content;
@@ -37,8 +49,10 @@
 }
 
 .navigation #modal-popup.modal--active {
-  display: grid;
-  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .3s, transform .3s, visibility 0s 0s;
+  transform: translateX(0);
 }
 
 @media(min-width: 1920px) {
